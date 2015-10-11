@@ -1,0 +1,14 @@
+prefix=/usr/local/qt5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 WebKitWidgets
+Description: Qt WebKitWidgets module
+Version: 5.4.2
+Libs: -L${libdir} -lQt5WebKitWidgets 
+Libs.private: -L/opt/vc/lib -L/usr/local/qt5/lib -lQt5Widgets -L/usr/local/qt5/lib -lQt5WebKit -lQt5Gui -lQt5Network -lQt5Core -lpthread -lEGL -lXext -lm -lX11 -lxslt -lgio-2.0 -lgstapp-0.10 -lgstinterfaces-0.10 -lgstpbutils-0.10 -lgstvideo-0.10 -lgstbase-0.10 -lgstreamer-0.10 -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -pthread -lglib-2.0 -lxml2 -lsqlite3 -licui18n -licuuc -licudata -L/usr/local/qt5/lib -lQt5Sensors -L/usr/local/qt5/lib -L/usr/local/qt5/lib -lQt5Positioning -lQt5PrintSupport -L/opt/vc/lib -lQt5OpenGL -lQt5Widgets -lQt5WebKit -lQt5Gui -lQt5Sql -lQt5Network -lQt5Core -lpthread -lGLESv2  
+Cflags: -I${includedir}/QtWebKitWidgets -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Widgets Qt5Network Qt5WebKit
+
